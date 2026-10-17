@@ -48,3 +48,20 @@ Edit values of the `$private_key`, `$to` and `amount` variables and execute scri
 Edit values of the `$private_key`, `$tokens_contract_address`, `$to` and `amount` variables and execute script:
 
 `php send_token.php`
+
+## Run tests
+
+The test suite is an **integration** suite: it talks to a local hardhat devnet on
+`http://127.0.0.1:8545` and uses the `TSX`/`TSX2` tokens deployed to it by the
+hardhat ignition module, so a bare node or a node in a different state is not enough.
+
+```bash
+npm install
+npx hardhat node                        # terminal 1: devnet on 127.0.0.1:8545
+npx hardhat ignition deploy ./ignition/modules/*.ts --network localhost
+php vendor/bin/phpunit                  # terminal 2
+```
+
+The sending tests really move ETH/tokens, so the devnet state drifts after a run:
+restart `npx hardhat node` (and redeploy) before the next run, otherwise
+balance assertions fail with values off by the amounts transferred earlier.
