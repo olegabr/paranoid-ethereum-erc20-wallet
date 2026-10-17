@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "75de80daf1f993ffe913c076b4e93940",
+    "content-hash": "22da150a9a688eb5530ec3fb40afeb2a",
     "packages": [
         {
             "name": "composer/semver",
@@ -66,6 +66,97 @@
                 "source": "https://github.com/composer/semver/tree/3.4.3"
             },
             "time": "2024-09-19T14:15:21+00:00"
+        },
+        {
+            "name": "evenement/evenement",
+            "version": "v3.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/evenement/evenement/v3.0.2/evenement-evenement-v3.0.2.zip",
+                "reference": "0a16b0d71ab13284339abb99d9d2bd813640efbc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9 || ^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Evenement\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                }
+            ],
+            "description": "Événement is a very simple event dispatching library for PHP",
+            "keywords": [
+                "event-dispatcher",
+                "event-emitter"
+            ],
+            "support": {
+                "issues": "https://github.com/igorw/evenement/issues",
+                "source": "https://github.com/igorw/evenement/tree/v3.0.2"
+            },
+            "time": "2023-08-08T05:53:35+00:00"
+        },
+        {
+            "name": "fig/http-message-util",
+            "version": "1.1.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/fig/http-message-util/1.1.5/fig-http-message-util-1.1.5.zip",
+                "reference": "9d94dc0154230ac39e5bf89398b324a86f63f765",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 || ^7.0 || ^8.0"
+            },
+            "suggest": {
+                "psr/http-message": "The package containing the PSR-7 interfaces"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fig\\Http\\Message\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Utility classes and constants for use with PSR-7 (psr/http-message)",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/http-message-util/issues",
+                "source": "https://github.com/php-fig/http-message-util/tree/1.1.5"
+            },
+            "time": "2020-11-24T22:02:12+00:00"
         },
         {
             "name": "genkgo/php-asn1",
@@ -408,27 +499,26 @@
         },
         {
             "name": "kornrunner/ethereum-address",
-            "version": "dev-main",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/olegabr/php-ethereum-address",
-                "reference": "9d25c23fae3c6055073f1aa004a9c3265515c5e7"
+                "reference": "00d9136bf463f46f04abd6c43328ddf44f71ad06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/olegabr/php-ethereum-address/zipball/9d25c23fae3c6055073f1aa004a9c3265515c5e7",
-                "reference": "9d25c23fae3c6055073f1aa004a9c3265515c5e7",
+                "url": "https://api.github.com/repos/olegabr/php-ethereum-address/zipball/00d9136bf463f46f04abd6c43328ddf44f71ad06",
+                "reference": "00d9136bf463f46f04abd6c43328ddf44f71ad06",
                 "shasum": ""
             },
             "require": {
-                "kornrunner/keccak": "^1.0",
+                "olegabr/keccak": "^1.0",
                 "paragonie/ecc": "^2",
-                "php": ">=7.2"
+                "php": "^7.2 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8|^9"
+                "phpunit/phpunit": "^9.6"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -450,74 +540,31 @@
                 }
             ],
             "description": "Pure PHP Ethereum Address Generator / Validator",
-            "time": "2024-09-21T07:30:32+00:00"
-        },
-        {
-            "name": "kornrunner/keccak",
-            "version": "1.1.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://mirrors.cloud.tencent.com/repository/composer/kornrunner/keccak/1.1.0/kornrunner-keccak-1.1.0.zip",
-                "reference": "433749d28e117fb97baf9f2631b92b5d9ab3c890",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.3",
-                "symfony/polyfill-mbstring": "^1.8"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "kornrunner\\": "src"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Boris Momcilovic",
-                    "homepage": "https://github.com/kornrunner/php-keccak"
-                }
-            ],
-            "description": "Pure PHP implementation of Keccak",
-            "keywords": [
-                "keccak",
-                "sha-3",
-                "sha3-256"
-            ],
-            "support": {
-                "issues": "https://github.com/kornrunner/php-keccak/issues",
-                "source": "https://github.com/kornrunner/php-keccak/tree/1.1.0"
-            },
-            "time": "2020-12-07T15:40:44+00:00"
+            "time": "2026-10-17T19:57:59+00:00"
         },
         {
             "name": "olegabr/ethereum-tx",
-            "version": "0.5.1",
+            "version": "0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/olegabr/ethereum-tx",
-                "reference": "99a0b74ec83b4c05292811d7072ff49248502d17"
+                "reference": "8067a0e36dcc08225aa21bababe4158e13f4073e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/olegabr/ethereum-tx/zipball/99a0b74ec83b4c05292811d7072ff49248502d17",
-                "reference": "99a0b74ec83b4c05292811d7072ff49248502d17",
+                "url": "https://api.github.com/repos/olegabr/ethereum-tx/zipball/8067a0e36dcc08225aa21bababe4158e13f4073e",
+                "reference": "8067a0e36dcc08225aa21bababe4158e13f4073e",
                 "shasum": ""
             },
             "require": {
                 "olegabr/ethereum-util": "~0.1",
                 "olegabr/keccak": "~1",
-                "olegabr/rlp": "^0.3.6",
-                "php": ">=5.6",
+                "olegabr/rlp": "^0.3.6 || ^0.4",
+                "php": "^7.0 || ^8.0",
                 "simplito/elliptic-php": "~1.0.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "5.7.27|^6.1"
+                "phpunit/phpunit": "^9.6"
             },
             "type": "library",
             "autoload": {
@@ -544,29 +591,30 @@
                 }
             ],
             "description": "Ethereum transaction library in PHP.",
-            "time": "2021-08-31T04:22:33+00:00"
+            "time": "2026-10-17T19:57:55+00:00"
         },
         {
             "name": "olegabr/ethereum-util",
-            "version": "0.1.2",
+            "version": "0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/olegabr/ethereum-util",
-                "reference": "9231d5c38d259f615938462975ac7f1e32124f4b"
+                "reference": "16e920818d515757d04867a2bffc384268944295"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/olegabr/ethereum-util/zipball/9231d5c38d259f615938462975ac7f1e32124f4b",
-                "reference": "9231d5c38d259f615938462975ac7f1e32124f4b",
+                "url": "https://api.github.com/repos/olegabr/ethereum-util/zipball/16e920818d515757d04867a2bffc384268944295",
+                "reference": "16e920818d515757d04867a2bffc384268944295",
                 "shasum": ""
             },
             "require": {
                 "olegabr/keccak": "~1",
-                "php": ">=5.6",
+                "php": "^7.0 || ^8.0",
+                "phpseclib/phpseclib": "^3.0",
                 "simplito/elliptic-php": "~1.0.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "5.7.27|^6.1"
+                "phpunit/phpunit": "^9.6"
             },
             "type": "library",
             "autoload": {
@@ -593,29 +641,28 @@
                 }
             ],
             "description": "A collection of utility functions for Ethereum written in PHP.",
-            "time": "2020-12-25T05:53:03+00:00"
+            "time": "2026-10-17T19:57:51+00:00"
         },
         {
             "name": "olegabr/keccak",
-            "version": "1.0.6",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/olegabr/php-keccak",
-                "reference": "31011dfdc4aace3b9786e005105bd41fa17574e4"
+                "reference": "ea83e39168358232741cfac5e65ce1457e9c68bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/olegabr/php-keccak/zipball/31011dfdc4aace3b9786e005105bd41fa17574e4",
-                "reference": "31011dfdc4aace3b9786e005105bd41fa17574e4",
+                "url": "https://api.github.com/repos/olegabr/php-keccak/zipball/ea83e39168358232741cfac5e65ce1457e9c68bb",
+                "reference": "ea83e39168358232741cfac5e65ce1457e9c68bb",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6",
+                "php": "^7.0 || ^8.0",
                 "symfony/polyfill-mbstring": "~1.19.0"
             },
             "require-dev": {
-                "php": ">=5.6",
-                "phpunit/phpunit": "5.7.27|6.5"
+                "phpunit/phpunit": "^9.6"
             },
             "type": "library",
             "autoload": {
@@ -647,30 +694,29 @@
                 "sha-3",
                 "sha3-256"
             ],
-            "time": "2021-06-20T07:10:00+00:00"
+            "time": "2026-10-17T19:57:59+00:00"
         },
         {
             "name": "olegabr/rlp",
-            "version": "0.3.6",
+            "version": "0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/olegabr/rlp",
-                "reference": "76cda212de61b8e5d32fc9cf646c355c8d61f2fe"
+                "reference": "59574674c5a5de82c288eec8b1c9ef0a40de3237"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/olegabr/rlp/zipball/76cda212de61b8e5d32fc9cf646c355c8d61f2fe",
-                "reference": "76cda212de61b8e5d32fc9cf646c355c8d61f2fe",
+                "url": "https://api.github.com/repos/olegabr/rlp/zipball/59574674c5a5de82c288eec8b1c9ef0a40de3237",
+                "reference": "59574674c5a5de82c288eec8b1c9ef0a40de3237",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=5.6"
+                "php": "^7.0 || ^8.0"
             },
             "require-dev": {
-                "php": ">=5.6",
                 "phpseclib/phpseclib": "^3.0.1",
-                "phpunit/phpunit": "5.7.27|6.5"
+                "phpunit/phpunit": "^9.6"
             },
             "type": "library",
             "autoload": {
@@ -697,31 +743,38 @@
                 }
             ],
             "description": "Recursive Length Prefix Encoding in PHP.",
-            "time": "2021-08-31T02:48:23+00:00"
+            "time": "2026-10-17T19:57:51+00:00"
         },
         {
             "name": "olegabr/web3.php",
-            "version": "0.2.0",
+            "version": "0.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/olegabr/web3.php",
-                "reference": "77db70e7f03930a9da6900074547285c1ce451b4"
+                "reference": "eaccbf75b6dc24240ce106483e84f5653c73c722"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/olegabr/web3.php/zipball/77db70e7f03930a9da6900074547285c1ce451b4",
-                "reference": "77db70e7f03930a9da6900074547285c1ce451b4",
+                "url": "https://api.github.com/repos/olegabr/web3.php/zipball/eaccbf75b6dc24240ce106483e84f5653c73c722",
+                "reference": "eaccbf75b6dc24240ce106483e84f5653c73c722",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "guzzlehttp/guzzle": "^7.0",
                 "olegabr/keccak": "~1.0",
-                "php": ">=5.6",
-                "phpseclib/phpseclib": "^3.0.1"
+                "php": "^7.4 || ^8.0",
+                "phpseclib/phpseclib": "^3.0.1",
+                "ratchet/pawl": "^0.4.1",
+                "react/async": "^4.0.0|^3.1.0",
+                "react/event-loop": "^1.2",
+                "react/http": "^1.6.0",
+                "react/promise": "^2.9.0",
+                "react/promise-timer": "^1.10",
+                "react/socket": "^1.13"
             },
             "require-dev": {
-                "phpunit/phpunit": "5.7.27|6.5"
+                "phpunit/phpunit": "^9.6"
             },
             "type": "library",
             "autoload": {
@@ -748,7 +801,7 @@
                 }
             ],
             "description": "Ethereum web3 interface.",
-            "time": "2021-08-24T13:30:19+00:00"
+            "time": "2026-10-17T19:57:55+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -1218,11 +1271,11 @@
         },
         {
             "name": "psr/http-message",
-            "version": "2.0",
+            "version": "1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://mirrors.cloud.tencent.com/repository/composer/psr/http-message/2.0/psr-http-message-2.0.zip",
-                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/psr/http-message/1.1/psr-http-message-1.1.zip",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
                 "shasum": ""
             },
             "require": {
@@ -1231,7 +1284,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -1245,7 +1298,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
+                    "homepage": "http://www.php-fig.org/"
                 }
             ],
             "description": "Common interface for HTTP messages",
@@ -1259,9 +1312,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-message/tree/2.0"
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
             },
-            "time": "2023-04-04T09:54:51+00:00"
+            "time": "2023-04-04T09:50:52+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -1300,6 +1353,694 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "ratchet/pawl",
+            "version": "v0.4.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/ratchet/pawl/v0.4.3/ratchet-pawl-v0.4.3.zip",
+                "reference": "2c582373c78271de32cb04c755c4c0db7e09c9c0",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "^3.0 || ^2.0",
+                "guzzlehttp/psr7": "^2.0",
+                "php": ">=7.4",
+                "ratchet/rfc6455": "^0.3.1 || ^0.4.0",
+                "react/socket": "^1.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8"
+            },
+            "suggest": {
+                "reactivex/rxphp": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "Ratchet\\Client\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Asynchronous WebSocket client",
+            "keywords": [
+                "Ratchet",
+                "async",
+                "client",
+                "websocket",
+                "websocket client"
+            ],
+            "support": {
+                "issues": "https://github.com/ratchetphp/Pawl/issues",
+                "source": "https://github.com/ratchetphp/Pawl/tree/v0.4.3"
+            },
+            "time": "2025-03-19T16:47:38+00:00"
+        },
+        {
+            "name": "ratchet/rfc6455",
+            "version": "v0.4.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/ratchet/rfc6455/v0.4.1/ratchet-rfc6455-v0.4.1.zip",
+                "reference": "9b05f371219cbaf9748b505f139617dd0715592b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "psr/http-factory-implementation": "^1.0",
+                "symfony/polyfill-php80": "^1.15"
+            },
+            "require-dev": {
+                "guzzlehttp/psr7": "^2.7",
+                "phpunit/phpunit": "^9.5",
+                "react/socket": "^1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ratchet\\RFC6455\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Matt Bonneau",
+                    "role": "Developer"
+                }
+            ],
+            "description": "RFC6455 WebSocket protocol handler",
+            "homepage": "http://socketo.me",
+            "keywords": [
+                "WebSockets",
+                "rfc6455",
+                "websocket"
+            ],
+            "support": {
+                "chat": "https://gitter.im/reactphp/reactphp",
+                "issues": "https://github.com/ratchetphp/RFC6455/issues",
+                "source": "https://github.com/ratchetphp/RFC6455/tree/v0.4.1"
+            },
+            "time": "2026-06-06T14:34:23+00:00"
+        },
+        {
+            "name": "react/async",
+            "version": "v4.3.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/react/async/v4.3.0/react-async-v4.3.0.zip",
+                "reference": "635d50e30844a484495713e8cb8d9e079c0008a5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "react/event-loop": "^1.2",
+                "react/promise": "^3.2 || ^2.8 || ^1.2.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "1.10.39",
+                "phpunit/phpunit": "^9.6"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "React\\Async\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering",
+                    "homepage": "https://clue.engineering/"
+                },
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "reactphp@ceesjankiewiet.nl",
+                    "homepage": "https://wyrihaximus.net/"
+                },
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com",
+                    "homepage": "https://sorgalla.com/"
+                },
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "homepage": "https://cboden.dev/"
+                }
+            ],
+            "description": "Async utilities and fibers for ReactPHP",
+            "keywords": [
+                "async",
+                "reactphp"
+            ],
+            "support": {
+                "issues": "https://github.com/reactphp/async/issues",
+                "source": "https://github.com/reactphp/async/tree/v4.3.0"
+            },
+            "time": "2024-06-04T14:40:02+00:00"
+        },
+        {
+            "name": "react/cache",
+            "version": "v1.2.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/react/cache/v1.2.0/react-cache-v1.2.0.zip",
+                "reference": "d47c472b64aa5608225f47965a484b75c7817d5b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "react/promise": "^3.0 || ^2.0 || ^1.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5 || ^5.7 || ^4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\Cache\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering",
+                    "homepage": "https://clue.engineering/"
+                },
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "reactphp@ceesjankiewiet.nl",
+                    "homepage": "https://wyrihaximus.net/"
+                },
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com",
+                    "homepage": "https://sorgalla.com/"
+                },
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "homepage": "https://cboden.dev/"
+                }
+            ],
+            "description": "Async, Promise-based cache interface for ReactPHP",
+            "keywords": [
+                "cache",
+                "caching",
+                "promise",
+                "reactphp"
+            ],
+            "support": {
+                "issues": "https://github.com/reactphp/cache/issues",
+                "source": "https://github.com/reactphp/cache/tree/v1.2.0"
+            },
+            "time": "2022-11-30T15:59:55+00:00"
+        },
+        {
+            "name": "react/dns",
+            "version": "v1.14.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/react/dns/v1.14.0/react-dns-v1.14.0.zip",
+                "reference": "7562c05391f42701c1fccf189c8225fece1cd7c3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "react/cache": "^1.0 || ^0.6 || ^0.5",
+                "react/event-loop": "^1.2",
+                "react/promise": "^3.2 || ^2.7 || ^1.2.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.6 || ^5.7 || ^4.8.36",
+                "react/async": "^4.3 || ^3 || ^2",
+                "react/promise-timer": "^1.11"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\Dns\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering",
+                    "homepage": "https://clue.engineering/"
+                },
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "reactphp@ceesjankiewiet.nl",
+                    "homepage": "https://wyrihaximus.net/"
+                },
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com",
+                    "homepage": "https://sorgalla.com/"
+                },
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "homepage": "https://cboden.dev/"
+                }
+            ],
+            "description": "Async DNS resolver for ReactPHP",
+            "keywords": [
+                "async",
+                "dns",
+                "dns-resolver",
+                "reactphp"
+            ],
+            "support": {
+                "issues": "https://github.com/reactphp/dns/issues",
+                "source": "https://github.com/reactphp/dns/tree/v1.14.0"
+            },
+            "time": "2025-11-18T19:34:28+00:00"
+        },
+        {
+            "name": "react/event-loop",
+            "version": "v1.6.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/react/event-loop/v1.6.0/react-event-loop-v1.6.0.zip",
+                "reference": "ba276bda6083df7e0050fd9b33f66ad7a4ac747a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.6 || ^5.7 || ^4.8.36"
+            },
+            "suggest": {
+                "ext-pcntl": "For signal handling support when using the StreamSelectLoop"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\EventLoop\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering",
+                    "homepage": "https://clue.engineering/"
+                },
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "reactphp@ceesjankiewiet.nl",
+                    "homepage": "https://wyrihaximus.net/"
+                },
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com",
+                    "homepage": "https://sorgalla.com/"
+                },
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "homepage": "https://cboden.dev/"
+                }
+            ],
+            "description": "ReactPHP's core reactor event loop that libraries can use for evented I/O.",
+            "keywords": [
+                "asynchronous",
+                "event-loop"
+            ],
+            "support": {
+                "issues": "https://github.com/reactphp/event-loop/issues",
+                "source": "https://github.com/reactphp/event-loop/tree/v1.6.0"
+            },
+            "time": "2025-11-17T20:46:25+00:00"
+        },
+        {
+            "name": "react/http",
+            "version": "v1.11.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/react/http/v1.11.1/react-http-v1.11.1.zip",
+                "reference": "e5b8eb2654dec6cbbc692a39f05ea4ecd40c8cc1",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
+                "fig/http-message-util": "^1.1",
+                "php": ">=5.3.0",
+                "psr/http-message": "^1.0",
+                "react/event-loop": "^1.2",
+                "react/promise": "^3.2 || ^2.3 || ^1.2.1",
+                "react/socket": "^1.16",
+                "react/stream": "^1.4"
+            },
+            "require-dev": {
+                "clue/http-proxy-react": "^1.8",
+                "clue/reactphp-ssh-proxy": "^1.4",
+                "clue/socks-react": "^1.4",
+                "phpunit/phpunit": "^9.6 || ^8.5 || ^5.7 || ^4.8.36",
+                "react/async": "^4.2 || ^3 || ^2",
+                "react/promise-stream": "^1.4",
+                "react/promise-timer": "^1.11"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\Http\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering",
+                    "homepage": "https://clue.engineering/"
+                },
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "reactphp@ceesjankiewiet.nl",
+                    "homepage": "https://wyrihaximus.net/"
+                },
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com",
+                    "homepage": "https://sorgalla.com/"
+                },
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "homepage": "https://cboden.dev/"
+                }
+            ],
+            "description": "Event-driven, streaming HTTP client and server implementation for ReactPHP",
+            "keywords": [
+                "async",
+                "client",
+                "event-driven",
+                "http",
+                "http client",
+                "http server",
+                "https",
+                "psr-7",
+                "reactphp",
+                "server",
+                "streaming"
+            ],
+            "support": {
+                "issues": "https://github.com/reactphp/http/issues",
+                "source": "https://github.com/reactphp/http/tree/v1.11.1"
+            },
+            "time": "2026-09-09T07:08:28+00:00"
+        },
+        {
+            "name": "react/promise",
+            "version": "v2.11.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/react/promise/v2.11.0/react-promise-v2.11.0.zip",
+                "reference": "1a8460931ea36dc5c76838fec5734d55c88c6831",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.6 || ^5.7 || ^4.8.36"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "React\\Promise\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com",
+                    "homepage": "https://sorgalla.com/"
+                },
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering",
+                    "homepage": "https://clue.engineering/"
+                },
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "reactphp@ceesjankiewiet.nl",
+                    "homepage": "https://wyrihaximus.net/"
+                },
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "homepage": "https://cboden.dev/"
+                }
+            ],
+            "description": "A lightweight implementation of CommonJS Promises/A for PHP",
+            "keywords": [
+                "promise",
+                "promises"
+            ],
+            "support": {
+                "issues": "https://github.com/reactphp/promise/issues",
+                "source": "https://github.com/reactphp/promise/tree/v2.11.0"
+            },
+            "time": "2023-11-16T16:16:50+00:00"
+        },
+        {
+            "name": "react/promise-timer",
+            "version": "v1.11.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/react/promise-timer/v1.11.0/react-promise-timer-v1.11.0.zip",
+                "reference": "4f70306ed66b8b44768941ca7f142092600fafc1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "react/event-loop": "^1.2",
+                "react/promise": "^3.2 || ^2.7.0 || ^1.2.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.6 || ^5.7 || ^4.8.36"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "React\\Promise\\Timer\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering",
+                    "homepage": "https://clue.engineering/"
+                },
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "reactphp@ceesjankiewiet.nl",
+                    "homepage": "https://wyrihaximus.net/"
+                },
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com",
+                    "homepage": "https://sorgalla.com/"
+                },
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "homepage": "https://cboden.dev/"
+                }
+            ],
+            "description": "A trivial implementation of timeouts for Promises, built on top of ReactPHP.",
+            "homepage": "https://github.com/reactphp/promise-timer",
+            "keywords": [
+                "async",
+                "event-loop",
+                "promise",
+                "reactphp",
+                "timeout",
+                "timer"
+            ],
+            "support": {
+                "issues": "https://github.com/reactphp/promise-timer/issues",
+                "source": "https://github.com/reactphp/promise-timer/tree/v1.11.0"
+            },
+            "time": "2024-06-04T14:27:45+00:00"
+        },
+        {
+            "name": "react/socket",
+            "version": "v1.17.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/react/socket/v1.17.0/react-socket-v1.17.0.zip",
+                "reference": "ef5b17b81f6f60504c539313f94f2d826c5faa08",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
+                "php": ">=5.3.0",
+                "react/dns": "^1.13",
+                "react/event-loop": "^1.2",
+                "react/promise": "^3.2 || ^2.6 || ^1.2.1",
+                "react/stream": "^1.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.6 || ^5.7 || ^4.8.36",
+                "react/async": "^4.3 || ^3.3 || ^2",
+                "react/promise-stream": "^1.4",
+                "react/promise-timer": "^1.11"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\Socket\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering",
+                    "homepage": "https://clue.engineering/"
+                },
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "reactphp@ceesjankiewiet.nl",
+                    "homepage": "https://wyrihaximus.net/"
+                },
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com",
+                    "homepage": "https://sorgalla.com/"
+                },
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "homepage": "https://cboden.dev/"
+                }
+            ],
+            "description": "Async, streaming plaintext TCP/IP and secure TLS socket server and client connections for ReactPHP",
+            "keywords": [
+                "Connection",
+                "Socket",
+                "async",
+                "reactphp",
+                "stream"
+            ],
+            "support": {
+                "issues": "https://github.com/reactphp/socket/issues",
+                "source": "https://github.com/reactphp/socket/tree/v1.17.0"
+            },
+            "time": "2025-11-19T20:47:34+00:00"
+        },
+        {
+            "name": "react/stream",
+            "version": "v1.4.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/react/stream/v1.4.0/react-stream-v1.4.0.zip",
+                "reference": "1e5b0acb8fe55143b5b426817155190eb6f5b18d",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
+                "php": ">=5.3.8",
+                "react/event-loop": "^1.2"
+            },
+            "require-dev": {
+                "clue/stream-filter": "~1.2",
+                "phpunit/phpunit": "^9.6 || ^5.7 || ^4.8.36"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\Stream\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering",
+                    "homepage": "https://clue.engineering/"
+                },
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "reactphp@ceesjankiewiet.nl",
+                    "homepage": "https://wyrihaximus.net/"
+                },
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com",
+                    "homepage": "https://sorgalla.com/"
+                },
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "homepage": "https://cboden.dev/"
+                }
+            ],
+            "description": "Event-driven readable and writable streams for non-blocking I/O in ReactPHP",
+            "keywords": [
+                "event-driven",
+                "io",
+                "non-blocking",
+                "pipe",
+                "reactphp",
+                "readable",
+                "stream",
+                "writable"
+            ],
+            "support": {
+                "issues": "https://github.com/reactphp/stream/issues",
+                "source": "https://github.com/reactphp/stream/tree/v1.4.0"
+            },
+            "time": "2024-06-11T12:45:25+00:00"
         },
         {
             "name": "simplito/bigint-wrapper-php",
@@ -1536,6 +2277,66 @@
                 "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.19.0"
             },
             "time": "2020-10-23T09:01:57+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php80",
+            "version": "v1.43.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/symfony/polyfill-php80/v1.43.0/symfony-polyfill-php80-v1.43.0.zip",
+                "reference": "9c6a5d6b01ca51d486c813e9a9c0ed55f208bb74",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ion Bazan",
+                    "email": "ion.bazan@gmail.com"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.43.0"
+            },
+            "time": "2026-09-25T15:50:05+00:00"
         }
     ],
     "packages-dev": [
@@ -2942,7 +3743,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "kornrunner/ethereum-address": 20,
         "symfony/deprecation-contracts": 20
     },
     "prefer-stable": true,

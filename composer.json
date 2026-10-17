@@ -1,63 +1,63 @@
 {
-  "name": "olegabr/paranoid-ethereum-erc20-wallet",
-  "description": "Simple code to send ERC20 tokens",
-  "type": "project",
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/olegabr/web3.php"
+    "name": "olegabr/paranoid-ethereum-erc20-wallet",
+    "description": "Simple code to send ERC20 tokens",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/olegabr/web3.php"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/olegabr/ethereum-tx"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/olegabr/ethereum-util"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/olegabr/php-keccak"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/olegabr/rlp"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/olegabr/php-ethereum-address"
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "olegabr/web3.php": "~0.3",
+        "olegabr/ethereum-tx": "^0.5.1",
+        "phpseclib/phpseclib": "3.0.42",
+        "guzzlehttp/guzzle": "7.9.2",
+        "composer/semver": "3.4.3",
+        "guzzlehttp/psr7": "1.8.5 || 2.7.0",
+        "guzzlehttp/promises": "2.0.3",
+        "psr/http-client": "1.0.3",
+        "psr/http-factory": "1.1.0",
+        "psr/http-message": "^1.1 || ^2.0",
+        "symfony/deprecation-contracts": "2.5.x-dev|3.5.0",
+        "kornrunner/ethereum-address": "^0.4.1"
     },
-    {
-      "type": "vcs",
-      "url": "https://github.com/olegabr/ethereum-tx"
+    "autoload": {
+        "psr-4": {
+            "Paranoid\\": "src/",
+            "Tests\\": "tests/"
+        }
     },
-    {
-      "type": "vcs",
-      "url": "https://github.com/olegabr/ethereum-util"
+    "authors": [
+        {
+            "name": "EthereumICO",
+            "email": "ethereumicoio@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
     },
-    {
-      "type": "vcs",
-      "url": "https://github.com/olegabr/php-keccak"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/olegabr/rlp"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/olegabr/php-ethereum-address"
-    }
-  ],
-  "require": {
-    "php": "^7.2 || ^8.0",
-    "olegabr/web3.php": "~0.2",
-    "olegabr/ethereum-tx": "^0.5.1",
-    "phpseclib/phpseclib": "3.0.42",
-    "guzzlehttp/guzzle": "7.9.2",
-    "composer/semver": "3.4.3",
-    "guzzlehttp/psr7": "1.8.5 || 2.7.0",
-    "guzzlehttp/promises": "2.0.3",
-    "psr/http-client": "1.0.3",
-    "psr/http-factory": "1.1.0",
-    "psr/http-message": "2.0",
-    "symfony/deprecation-contracts": "2.5.x-dev|3.5.0",
-    "kornrunner/ethereum-address": "dev-main"
-  },
-  "autoload": {
-    "psr-4": {
-      "Paranoid\\": "src/",
-      "Tests\\": "tests/"
-    }
-  },
-  "authors": [
-    {
-      "name": "EthereumICO",
-      "email": "ethereumicoio@gmail.com"
-    }
-  ],
-  "minimum-stability": "dev",
-  "require-dev": {
-    "phpunit/phpunit": "^9.6"
-  },
-  "prefer-stable": true
+    "prefer-stable": true
 }

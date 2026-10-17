@@ -75,7 +75,7 @@ final class Blockchain
      */
     function get_provider_url(): string
     {
-        return $this->http_provider->getRequestManager()->getHost();
+        return $this->http_provider->getHost();
     }
 
     /**
@@ -522,9 +522,8 @@ final class Blockchain
      */
     private function _get_provider(string $provider_url, int $network_timeout): \Web3\Providers\HttpProvider
     {
-        $requestManager = new \Web3\RequestManagers\HttpRequestManager($provider_url, $network_timeout);
-        $_httpProvider = new \Web3\Providers\HttpProvider($requestManager);
-        return $_httpProvider;
+        // web3 0.3 dropped the RequestManagers layer, the provider takes the host itself
+        return new \Web3\Providers\HttpProvider($provider_url, $network_timeout);
     }
 
     /**
